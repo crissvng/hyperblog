@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+git init 
+////////////////////////////////////////////////////////////////////////////////
+
+git remote add origin (URL) https://github.com/crissvng/hyperblog.git
+git remote -v (sea verbal)
+git pull origin master
+git push origin master
+git pull origin master —allow-unrelated-histories
+
+///////////////////////////////////////////////////////////////////////////////
+
+git diff
+
+///////////////////////////////////////////////////////////////////////////////
+ssh-keygen -t -rsa -b 4096 -C "email@mail.com"
+
+eval "$(ssh-agent -s)"
+
+vim config
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_rsa
+
+cd  (just to go out of the folder)
+
+ssh-add -K ~/.ssh/id_rsa
+///////////////////////////////////////////////////////////////////////////////
+
+
+git log --all --graph --decorate --oneline (arbol para sacar id para tag)
+
+alias arbolito="git log --all --graph --decorate --oneline"
+
+git tag -a v0.1 -m "result of first class of the curse" agregar id(console log)
+
+git tag (muestra todos los tags)
+
+git show-ref —-tags
